@@ -15,7 +15,3 @@ C
 hs_err_pid15228.log,c\f\cf71954076c37ac057aa82173a85fd7873486c81
 C
 hs_err_pid19992.log,8\f\8f1ade3e9a79003cc2d39d7058922ea7e9e2a567
-h
-8src\main\java\com\yous\learningtwo\host\MyPredicate.java,3\1\31cfbdba92542654f6037ce54535a779a5c153b8
-b
-2src\main\java\com\yous\learningtwo\host\Demo9.java,5\7\57bb6fca9f144b459b4eeb4d006063a349867ed0

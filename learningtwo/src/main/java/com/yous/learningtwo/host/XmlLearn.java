@@ -328,7 +328,7 @@ public class XmlLearn {
 
 
 
-    private static Set<Integer> test(List<Student> students) {
+   /* private static Set<Integer> test(List<Student> students) {
 
         Set<Integer> set = new HashSet<>();
         students.forEach(x -> {
@@ -337,6 +337,6 @@ public class XmlLearn {
         });
 
         return set;
-    }
+    }*/
 
 }

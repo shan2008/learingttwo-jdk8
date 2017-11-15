@@ -43,11 +43,11 @@ public class Demo4 {
                 .distinct().collect(Collectors.toList())
                 .size()).orElse(0);*/
 
-        int speakerCount4 = Optional.ofNullable(list2).map(messages -> messages.stream()
+       /* int speakerCount4 = Optional.ofNullable(list2).map(messages -> messages.stream()
                 .filter(m ->m.getId()==1)
                 .map(p -> p.getName())
                 .distinct().collect(Collectors.toList())
-                .size()).orElse(0);
+                .size()).orElse(0);*/
 
 /*
 
@@ -56,11 +56,13 @@ public class Demo4 {
                 ).;
 */
 
+/*
 
         //去除list2中与list 不匹配的
         Optional.ofNullable(list).ifPresent(lt -> {
             list2.removeIf(l2 -> lt.stream().noneMatch(lt1 -> Objects.equals(lt1.getId(), l2.getId())));
         });
+*/
 
         //  System.out.println(list2.size());
      /*  List<Integer> ids= Optional.ofNullable(list).map(t->t.stream().map(Student::getId).collect(Collectors.toList()))

@@ -19,9 +19,14 @@ public class Demo8 {
         lt.add(new Student(2, "hahahaassssa"));
         lt.add(new Student(4, "hahahaa"));
         lt.add(new Student(4, "hahasah"));
-        lt.add(new Student(1, "hahsah"));
+        lt.add(new Student(8, "hahsah"));
 
 
+        lt.stream().max(Comparator.comparing(Student::getId)).ifPresent(x -> x.setName("ka"));
+
+      lt.forEach(x->{
+          System.out.println(x.getId()+ "="+x.getName());
+      });
 
 /*         List<Student> list=filter(lt,(e)->e.getId()>2);
         list.forEach(System.out::println);
