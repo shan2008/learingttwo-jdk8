@@ -10,28 +10,21 @@ public class Demo2 {
 
     public static void main(String[] args) {
 
-        long[] nums=new long[10000000];
+        List<String> list = new ArrayList<String>(2);
+        list.add("guan");
+        list.add("bao");
+        list.add("you");
+        list.add("shan");
+        List<String>  a= list.subList(0, 3);
+        list.forEach(System.out::println);
+        a.remove(0);
+        list.forEach(System.out::println);
 
-        List lists=new ArrayList(100000);
-        lists.toArray();
-        Integer a=new Integer(5);
-        int b=5;
-        System.out.println(a==b);
-       /* nums.add("y");
-        nums.add("o");
-        nums.add("u");
-        System.out.println(nums);
-        System.out.println("***********");
-        System.out.println(String.join("-","you"));
-
-        StringJoiner joiner=new StringJoiner("*");
-        for(String num :nums){
-            joiner.add(num);
-        }
-
-        System.out.println(joiner.toString());*/
+        //subList 修改元素，会修改原list ,截取subList 之后，修改原list则子串失效
+        //subList 转ArraryList
 
 
-       // Arrays.parallelSetAll(nums,index-> ThreadLocalRandom.current().nextInt(1000000));
+
+
     }
 }

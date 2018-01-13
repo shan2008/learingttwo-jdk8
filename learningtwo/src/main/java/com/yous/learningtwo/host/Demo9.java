@@ -30,8 +30,6 @@ public class Demo9 {
 
     }
 
-
-
     private static void timeTest(){
         final Clock clock=Clock.systemUTC();
         System.out.println(clock.instant());
