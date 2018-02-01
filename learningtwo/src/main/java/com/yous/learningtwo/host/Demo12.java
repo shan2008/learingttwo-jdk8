@@ -18,7 +18,8 @@ public class Demo12 {
             if(student.getId()>1){
                 student.setName(student.getName()+"YOU");
             }
-        }).forEach(x -> System.out.println(x.getName()));
+        });
+               // .forEach(x -> System.out.println(x.getName()));
 
         String city="上海市";
         System.out.println(city.length());

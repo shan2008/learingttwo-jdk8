@@ -28,4 +28,5 @@ target
 __ConfigTemp
 .idea
 *.iml
+*.log
 **/bin/**
