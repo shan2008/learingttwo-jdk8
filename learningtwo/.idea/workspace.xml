@@ -5,54 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb4b27c-ec75-4c45-a08c-a361426bbb2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/DateTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/PersonEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/QrCodeUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/Tuple.java" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\libraries\Maven__com_alibaba_fastjson_1_1_29.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\libraries\Maven__com_google_zxing_core_3_3_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\libraries\Maven__com_google_zxing_javase_3_0_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid15228.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid19992.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid2064.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid4984.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid5468.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid6004.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\hs_err_pid9108.log" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\CloneMain.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\CollectionHandler.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\CollectionHelper.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Convert2.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Converter.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo10.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo2.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo3.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo4.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo5.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo7.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo8.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Demo9.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Formula.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Fruit.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\GetClassColumn.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\InterfaceFunction.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Man.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\MyPredicate.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Order.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Person.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Resume.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\SemanticTrainResltEnum$1.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\SemanticTrainResltEnum.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\Student.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\UserDTO.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\UserDao.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\UserDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\classes\com\yous\learningtwo\host\XmlLearn.class" afterPath="" />
-      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\target\test-classes\test.class" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\1\5\15cc9cd9503b75b3680479f721bec87fb585f475" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\2\6\269d25985e74f023538575fd493cb5dd65957fc4" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\5\9\599753b9e99ddf9d88439fb5d211981de71db02d" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\5\e\5ee64a06436d526bec95683d75c1f25bd391f793" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\8\f\8f1ade3e9a79003cc2d39d7058922ea7e9e2a567" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\c\f\cf71954076c37ac057aa82173a85fd7873486c81" afterPath="" />
+      <change type="DELETED" beforePath="E:\java\Idea-Project\learingttwo-jdk8\learningtwo\.idea\sonarlint\issuestore\e\c\ece807f63ead181b97e267b852a134ea586cca2c" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/Demo12.java" afterPath="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/Demo12.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/learningtwo.iml" afterPath="$PROJECT_DIR$/learningtwo.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="learningtwo.iws" />
@@ -112,11 +73,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileDownLoad.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileDownLoad.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/FileDownLoad.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.20307693">
+            <state vertical-scroll-proportion="0.0">
               <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DateTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/DateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4059977">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -221,9 +204,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/DateTest.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/Tuple.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/QrCodeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/PersonEnum.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -309,9 +292,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -347,53 +327,52 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="learningtwo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learningtwo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learningtwo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="learningtwo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="host" />
+              <option name="myItemId" value="learningtwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learningtwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learningtwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learningtwo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value=".idea" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -901,11 +880,12 @@
       <workItem from="1517368098553" duration="352000" />
       <workItem from="1517369380228" duration="769000" />
       <workItem from="1517454734217" duration="4529000" />
+      <workItem from="1517475956734" duration="119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="228286000" />
+    <option name="totallyTimeSpent" value="228405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -922,13 +902,11 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31122994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13325183" sideWeight="0.47416413" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13447432" sideWeight="0.47416413" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32849163" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24134079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3007335" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -938,13 +916,15 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.49405771" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28379887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.095187165" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28379887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31122994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24134079" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.023227384" sideWeight="0.5258359" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.05691964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1227,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="579" column="22" selection-start-line="579" selection-start-column="22" selection-end-line="579" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1456,40 +1435,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="629" column="18" selection-start-line="629" selection-start-column="18" selection-end-line="629" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#143458#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#22382#22383#0" expanded="false" />
-            <element signature="e#22439#22440#0" expanded="false" />
-            <element signature="e#22788#22789#0" expanded="false" />
-            <element signature="e#22844#22845#0" expanded="false" />
-            <element signature="e#31744#31745#0" expanded="false" />
-            <element signature="e#31791#31792#0" expanded="false" />
-            <element signature="e#44949#44950#0" expanded="false" />
-            <element signature="e#45040#45041#0" expanded="false" />
-            <element signature="e#55854#55855#0" expanded="false" />
-            <element signature="e#55897#55898#0" expanded="false" />
-            <element signature="e#57316#57317#0" expanded="false" />
-            <element signature="e#57365#57366#0" expanded="false" />
-            <element signature="e#57604#57605#0" expanded="false" />
-            <element signature="e#57675#57676#0" expanded="false" />
-            <element signature="e#57917#57918#0" expanded="false" />
-            <element signature="e#57999#58000#0" expanded="false" />
-            <element signature="e#103571#103572#0" expanded="false" />
-            <element signature="e#103631#103632#0" expanded="false" />
-            <element signature="e#112993#112994#0" expanded="false" />
-            <element signature="e#113030#113031#0" expanded="false" />
-            <element signature="e#113059#113060#0" expanded="false" />
-            <element signature="e#113100#113101#0" expanded="false" />
-            <element signature="e#114164#114165#0" expanded="false" />
-            <element signature="e#114202#114203#0" expanded="false" />
-            <element signature="e#132448#132449#0" expanded="false" />
-            <element signature="e#132533#132534#0" expanded="false" />
-            <element signature="e#135184#135185#0" expanded="false" />
-            <element signature="e#135261#135262#0" expanded="false" />
-            <element signature="e#140027#140028#0" expanded="false" />
-            <element signature="e#140064#140065#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1547,15 +1492,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91384614">
-          <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1563,15 +1499,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.30461538">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding>
-            <element signature="e#202#203#0" expanded="true" />
-            <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#302#303#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#402#403#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1617,9 +1544,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42461538">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1627,16 +1551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4953846">
           <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/DateTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5030769">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1655,7 +1569,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16923077">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1693,8 +1606,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/FileDownLoad.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.20307693">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yous/learningtwo/host/DateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4059977">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding />
         </state>
       </provider>

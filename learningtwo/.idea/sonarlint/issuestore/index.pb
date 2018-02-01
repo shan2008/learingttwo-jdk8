@@ -1,19 +1,5 @@
 
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-B
-hs_err_pid2064.log,5\9\599753b9e99ddf9d88439fb5d211981de71db02d
-B
-hs_err_pid4984.log,2\6\269d25985e74f023538575fd493cb5dd65957fc4
-B
-hs_err_pid5468.log,1\5\15cc9cd9503b75b3680479f721bec87fb585f475
-B
-hs_err_pid6004.log,5\e\5ee64a06436d526bec95683d75c1f25bd391f793
-B
-hs_err_pid9108.log,e\c\ece807f63ead181b97e267b852a134ea586cca2c
-C
-hs_err_pid15228.log,c\f\cf71954076c37ac057aa82173a85fd7873486c81
-C
-hs_err_pid19992.log,8\f\8f1ade3e9a79003cc2d39d7058922ea7e9e2a567
 ?
 learningtwo.iml,7\2\7270faa328e27454f91407e746222d89ffb7a46e

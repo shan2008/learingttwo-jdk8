@@ -30,3 +30,4 @@ __ConfigTemp
 *.iml
 *.log
 **/bin/**
+sonarlint/**
