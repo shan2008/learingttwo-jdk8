@@ -12,7 +12,17 @@ import java.util.stream.Stream;
 public class Demo12 {
     public static void main(String[] args) {
 
-        List<Student> students= Arrays.asList(new Student(1, "hhha"), new Student(9, "gh2h2"), new Student(3, "ss"));
+        List<Student> students= Arrays.asList(new Student(1, "hhha"), new Student(2, "gh2h2"), new Student(3, "ss"));
+
+
+        int totalScore = students
+                .stream()
+                .collect(Collectors.summingInt(d -> (d.getId()*2)));
+
+
+
+
+
 
         getStudent().stream().peek(student->{
             if(student.getId()>1){
