@@ -8,7 +8,16 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Demo0 {
     public static void main(String[] args) {
-        Map<String, Integer> map = new HashMap<>(8);
+        Set<Integer> set = new HashSet<>();
+        set.add(new Integer(1));
+        set.add(new Integer(1));
+        set.add(new Integer(1));
+
+        System.out.println(set.size());
+        System.out.println(set.iterator().next());
+
+
+       /* Map<String, Integer> map = new HashMap<>(8);
         map.put("y", 1);
         map.put("s", 2);
         map.put("g", 3);
@@ -26,7 +35,7 @@ public class Demo0 {
         Map<String,Integer> maps=new ConcurrentHashMap<>();
         Map<String,Integer> hashMap=Collections.synchronizedMap(new HashMap<>());
         Map<String,Integer> treeMap=new TreeMap<>();
-
+*/
 
     }
 }

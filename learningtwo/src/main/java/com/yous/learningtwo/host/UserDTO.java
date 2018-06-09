@@ -3,7 +3,7 @@ package com.yous.learningtwo.host;
 /**
  * Created by syou on 2017/7/28.
  */
-public class UserDTO {
+public class UserDTO  implements Cloneable{
     public Student getStudent() {
         return student;
     }
@@ -23,4 +23,8 @@ public class UserDTO {
     Student student;
     int code;
 
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return (UserDTO)super.clone();
+    }
 }

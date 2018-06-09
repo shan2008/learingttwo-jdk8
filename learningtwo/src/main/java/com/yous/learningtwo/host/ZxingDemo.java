@@ -1,6 +1,7 @@
 package com.yous.learningtwo.host;
 
 import com.alibaba.fastjson.JSONObject;
+import com.ctrip.framework.vi.util.IOUtils;
 import com.ctrip.tour.tripservice.framework.core.utilities.http.HttpHelper;
 import com.google.zxing.*;
 import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
@@ -10,6 +11,7 @@ import com.google.zxing.common.HybridBinarizer;
 import com.mysql.jdbc.StringUtils;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
+import okhttp3.Response;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -33,9 +35,12 @@ public class ZxingDemo {
         //http://blog.csdn.net/WuZuoDingFeng/article/details/77946489 JPG格式被修改ps 保存，，颜色编码变为CMYK，
         // ImageIO.read 报异常 Unsupported Image Type
         // String url = "https://dimg16.c-ctrip.com/images/Z00k0o000000eqj2u0406_W_300_0.jpg";
-        String url2 = "https://dimg16.c-ctrip.com/images/Z0010o000000f0a1bD4CB_W_0_180.jpg";
+        String url2 = "https://image.jescard.com/ysyqq52q66bl55652s5655qeq00556s6 ";// "https://dimg16.c-ctrip.com/images/Z0010o000000f0a1bD4CB_W_0_180.jpg";
+        getPicInputStream2(url2);
 
-        //  boolean flag = isPicture(url2);
+
+
+      /*  //  boolean flag = isPicture(url2);
         InputStream inputStream = getPicInputStream(url2);
         decodeQcode(inputStream);
 
@@ -43,7 +48,7 @@ public class ZxingDemo {
         String bb = "b";
         String b = "a" + bb;
         System.out.println(b.toString());
-        System.out.println((a == b)); //result = false
+        System.out.println((a == b)); //result = false*/
 
 
     }
@@ -117,26 +122,38 @@ public class ZxingDemo {
      * @return
      */
     public static InputStream getPicInputStream(String url) {
-       /* InputStream inputStream = null;
-        HttpURLConnection connection=null;
+        InputStream inputStream = null;
+        HttpURLConnection connection = null;
         try {
             URL picUrl = new URL(url);
-            connection =(HttpURLConnection)picUrl.openConnection();
+            connection = (HttpURLConnection) picUrl.openConnection();
             inputStream = connection.getInputStream();
         } catch (Exception e) {
-        }finally {
-            connection.disconnect();
-        }*/
-        try {
-            return HttpHelper.sendGetByteStreamRequest(url, null);
-        } catch (Exception e) {
-
         } finally {
-
+            connection.disconnect();
         }
+        return null;
+    }
+
+    public static InputStream getPicInputStream2(String url) {
+       try {
+           Request request=new Request.Builder().url(url).build();
+           Response response=new OkHttpClient().newCall(request).execute();
+
+          InputStream stream=  response.body().byteStream();
+           org.apache.commons.io.IOUtils.toByteArray(stream);
+           org.apache.commons.io.IOUtils.toByteArray(stream);
+           if(response!=null){
+               System.out.println(response.body());
+           }
+       }catch (Exception e){
+           System.out.println(e);
+       }
 
         return null;
     }
+
+
 
     public static void decodeQcode(InputStream inputStream) {
         if (inputStream == null) {

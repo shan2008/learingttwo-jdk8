@@ -6,6 +6,10 @@ package com.yous.learningtwo.host;
 public class Student {
     public  Student(){};
 
+
+    public Student(int id){
+        this.id=id;
+    }
     public Student(Integer id,String name){
         this.id=id;
         this.name=name;

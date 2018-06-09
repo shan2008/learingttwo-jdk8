@@ -1,35 +1,38 @@
 package com.yous.learningtwo.host;
 
 /**
- * Created by syou on 2017/9/9.
+ * Created by syou on 2017/7/5.
  */
-public enum Fruit {
-    APPLE(1,"苹果"),
-    oranage(2,"梨子"),
-    brnana(3,"香蕉");
+public class Fruit {
 
-    public int getValue() {
-        return value;
+    public Fruit(int id){
+        this.id=id;
+        this.name=name;
     }
 
-    public void setValue(int value) {
-        this.value = value;
+    public String getName() {
+        return name;
     }
 
-    public String getDesc() {
-        return desc;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setDesc(String desc) {
-        this.desc = desc;
+    public Integer getId() {
+        return id;
     }
 
-    private   int value;
-    private  String desc;
-
-    Fruit(int value,String desc){
-        this.value=value;
-        this.desc=desc;
+    public void setId(int id) {
+        this.id = id;
     }
+
+    private Integer id;
+    private String name;
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+
 
 }

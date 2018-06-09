@@ -18,14 +18,14 @@ public class Demo3 {
                 .append("?issms=1&autoawaken=close&calendar=1&isHideNavBar=YES")
                 .append("&orderMainId=" + 2).toString();
         System.out.println(smsUrl);*/
-        Instant instant = Instant.now();
+       /* Instant instant = Instant.now();
         System.out.println(instant);
         Clock c=Clock.systemDefaultZone();
         System.out.println(c.millis());
         System.out.println(System.currentTimeMillis());
 
         List<Fruit> fruit=Arrays.asList(Fruit.values());
-
+*/
        /* List<Student> list = new ArrayList<>();
         // Student st=new Student(1,"haha");
 
