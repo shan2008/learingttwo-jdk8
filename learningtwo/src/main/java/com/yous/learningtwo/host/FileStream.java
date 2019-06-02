@@ -18,21 +18,21 @@ public class FileStream {
 
 
     public static void main(String[] args) {
-        File file=new File("D:\\Users\\syou\\Desktop\\test.txt");
-        if(file.exists()){
+        File file = new File("D:\\Users\\syou\\Desktop\\test.txt");
+        if (file.exists()) {
             System.out.println(true);
         }
 
-       List<Integer> a= Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(20).map(t->t[0]).collect(Collectors.toList());
+        List<Integer> a = Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]}).limit(20).map(t -> t[0]).collect(Collectors.toList());
 
         System.out.println(a);
-    try (Stream<String> lines= Files.lines(Paths.get("D:\\Users\\syou\\Desktop\\test.txt"), Charset.defaultCharset())){
+        try (Stream<String> lines = Files.lines(Paths.get("D:\\Users\\syou\\Desktop\\test.txt"), Charset.defaultCharset())) {
 
-       long  distinctCount=lines.flatMap(line-> Arrays.stream(line.split(" "))).distinct().count();
-        System.out.println(distinctCount);
-    }catch (Exception e){
-        System.out.println(e);
-    }
+            long distinctCount = lines.flatMap(line -> Arrays.stream(line.split(" "))).distinct().count();
+            System.out.println(distinctCount);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
 
     }
 

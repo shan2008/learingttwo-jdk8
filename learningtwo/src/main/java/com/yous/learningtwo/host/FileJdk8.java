@@ -1,16 +1,11 @@
 package com.yous.learningtwo.host;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.nio.file.Files;
+import com.yous.learningtwo.host.dto.Fruit;
+import com.yous.learningtwo.host.dto.Student;
+
 import java.util.*;
-import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
-import java.util.stream.Collector;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by syou on 2018/2/24.
@@ -27,15 +22,12 @@ public class FileJdk8 {
     }
 
     public static void main(String[] args) {
+
         /*System.out.println(Runtime.getRuntime().maxMemory() / (1024 * 1024 * 1024));
         List<Byte[]> list = new ArrayList<>();
         for (int i = 0; i < 1024; i++) {
             list.add(new Byte[1024 * 1024]);
         }
-
-
-
-
 
 
         File[] hiddenFile = new File(".").listFiles(r -> r.isHidden()

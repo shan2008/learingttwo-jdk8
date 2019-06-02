@@ -1,6 +1,7 @@
 package com.yous.learningtwo.host.functionInterface;
 
 import java.lang.reflect.Field;
+import java.util.Comparator;
 
 /**
  * Created by syou on 2018/4/3.
@@ -8,6 +9,8 @@ import java.lang.reflect.Field;
 public class FiledUtil {
 
     public static <E> String[] getFileds(Class<E> clazz) {
+
+
 
         return getNames(clazz, new FiledProducer<Field[]>() {
             @Override
