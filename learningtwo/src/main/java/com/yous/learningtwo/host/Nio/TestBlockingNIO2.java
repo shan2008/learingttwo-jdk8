@@ -12,7 +12,6 @@ import java.nio.file.StandardOpenOption;
 import org.junit.Test;
 
 public class TestBlockingNIO2 {
-
     //客户端
     @Test
     public void client() throws IOException {

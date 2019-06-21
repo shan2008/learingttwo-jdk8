@@ -36,7 +36,6 @@ public class TestNIO_2 {
 
         }
     }
-
     /*
         Files常用方法：用于操作内容
             SeekableByteChannel newByteChannel(Path path, OpenOption…how) : 获取与指定文件的连接，how 指定打开方式。

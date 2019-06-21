@@ -18,7 +18,6 @@ import java.util.Scanner;
  */
 public class MyTest {
 
-
     @Test
     public void client() {
 

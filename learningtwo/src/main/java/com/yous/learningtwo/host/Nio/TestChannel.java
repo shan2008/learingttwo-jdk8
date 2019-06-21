@@ -172,7 +172,6 @@ public class TestChannel {
 
 		System.out.println("耗费时间为：" + (end - start));
 	}
-	
 	//利用通道完成文件的复制（非直接缓冲区）
 	@Test
 	public void test1(){//10874-10953

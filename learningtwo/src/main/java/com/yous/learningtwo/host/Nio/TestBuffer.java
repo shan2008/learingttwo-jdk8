@@ -73,7 +73,6 @@ public class TestBuffer {
 		
 		//判断缓冲区中是否还有剩余数据
 		if(buf.hasRemaining()){
-			
 			//获取缓冲区中可以操作的数量
 			System.out.println(buf.remaining());
 		}
@@ -82,7 +81,6 @@ public class TestBuffer {
 	@Test
 	public void test1(){
 		String str = "abcde";
-		
 		//1. 分配一个指定大小的缓冲区
 		ByteBuffer buf = ByteBuffer.allocate(1024);
 		

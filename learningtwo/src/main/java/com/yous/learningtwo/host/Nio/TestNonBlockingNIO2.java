@@ -13,7 +13,6 @@ import java.util.Scanner;
 import org.junit.Test;
 
 public class TestNonBlockingNIO2 {
-	
 	@Test
 	public void send() throws IOException{
 		DatagramChannel dc = DatagramChannel.open();
