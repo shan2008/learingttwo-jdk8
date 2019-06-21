@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.Nio;
+package com.yous.learningtwo.host.nio;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -9,15 +9,17 @@ import java.nio.CharBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.channels.FileChannel.MapMode;
-import java.nio.charset.CharacterCodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.Test;
 
@@ -125,7 +127,8 @@ public class TestChannel {
 		for (ByteBuffer byteBuffer : bufs) {
 			byteBuffer.flip();
 		}
-		
+
+
 		System.out.println(new String(bufs[0].array(), 0, bufs[0].limit()));
 		System.out.println("-----------------");
 		System.out.println(new String(bufs[1].array(), 0, bufs[1].limit()));
@@ -140,37 +143,33 @@ public class TestChannel {
 	//通道之间的数据传输(直接缓冲区)
 	@Test
 	public void test3() throws IOException{
-		FileChannel inChannel = FileChannel.open(Paths.get("d:/1.mkv"), StandardOpenOption.READ);
-		FileChannel outChannel = FileChannel.open(Paths.get("d:/2.mkv"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE);
-		
-//		inChannel.transferTo(0, inChannel.size(), outChannel);
-		outChannel.transferFrom(inChannel, 0, inChannel.size());
-		
-		inChannel.close();
-		outChannel.close();
+
+		try (FileChannel inChannel = FileChannel.open(Paths.get("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\视频-1.zip"), StandardOpenOption.READ);
+			 FileChannel outChannel = FileChannel.open(Paths.get("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\backup1.zip"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE)){
+			inChannel.transferTo(0, inChannel.size(), outChannel);
+			outChannel.transferFrom(inChannel, 0, inChannel.size());
+		}
+
 	}
 	
 	//使用直接缓冲区完成文件的复制(内存映射文件)
 	@Test
 	public void test2() throws IOException{//2127-1902-1777
 		long start = System.currentTimeMillis();
-		
-		FileChannel inChannel = FileChannel.open(Paths.get("d:/1.mkv"), StandardOpenOption.READ);
-		FileChannel outChannel = FileChannel.open(Paths.get("d:/2.mkv"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE);
-		
-		//内存映射文件
-		MappedByteBuffer inMappedBuf = inChannel.map(MapMode.READ_ONLY, 0, inChannel.size());
-		MappedByteBuffer outMappedBuf = outChannel.map(MapMode.READ_WRITE, 0, inChannel.size());
-		
-		//直接对缓冲区进行数据的读写操作
-		byte[] dst = new byte[inMappedBuf.limit()];
-		inMappedBuf.get(dst);
-		outMappedBuf.put(dst);
-		
-		inChannel.close();
-		outChannel.close();
-		
+
+		try(FileChannel inChannel = FileChannel.open(Paths.get("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\视频-1.zip"), StandardOpenOption.READ);
+			FileChannel outChannel = FileChannel.open(Paths.get("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\backup1.zip"), StandardOpenOption.WRITE, StandardOpenOption.READ, StandardOpenOption.CREATE);) {
+			//内存映射文件
+			MappedByteBuffer inMappedBuf = inChannel.map(MapMode.READ_ONLY, 0, inChannel.size());
+			MappedByteBuffer outMappedBuf = outChannel.map(MapMode.READ_WRITE, 0, inChannel.size());
+			//直接对缓冲区进行数据的读写操作
+			byte[] dst = new byte[inMappedBuf.limit()];
+			inMappedBuf.get(dst);
+			outMappedBuf.put(dst);
+		}
+
 		long end = System.currentTimeMillis();
+
 		System.out.println("耗费时间为：" + (end - start));
 	}
 	
@@ -178,68 +177,22 @@ public class TestChannel {
 	@Test
 	public void test1(){//10874-10953
 		long start = System.currentTimeMillis();
-		
-		FileInputStream fis = null;
-		FileOutputStream fos = null;
-		//①获取通道
-		FileChannel inChannel = null;
-		FileChannel outChannel = null;
-		try {
-			fis = new FileInputStream("d:/1.mkv");
-			fos = new FileOutputStream("d:/2.mkv");
-			
-			inChannel = fis.getChannel();
-			outChannel = fos.getChannel();
-			
-			//②分配指定大小的缓冲区
+		try(FileInputStream fis = new FileInputStream("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\视频-1.zip");
+			FileOutputStream fos = new FileOutputStream("D:\\桌面备份\\学习视频\\尚硅谷系列\\尚硅谷SpringCloud视频\\backup1.zip");
+			FileChannel inChannel = fis.getChannel();
+			FileChannel outChannel =fos.getChannel()) {
 			ByteBuffer buf = ByteBuffer.allocate(1024);
-			
-			//③将通道中的数据存入缓冲区中
 			while(inChannel.read(buf) != -1){
-				buf.flip(); //切换读取数据的模式
-				//④将缓冲区中的数据写入通道中
+				buf.flip();
 				outChannel.write(buf);
-				buf.clear(); //清空缓冲区
+				buf.clear();
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
-		} finally {
-			if(outChannel != null){
-				try {
-					outChannel.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			
-			if(inChannel != null){
-				try {
-					inChannel.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			
-			if(fos != null){
-				try {
-					fos.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-			
-			if(fis != null){
-				try {
-					fis.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
 		}
-		
+
 		long end = System.currentTimeMillis();
 		System.out.println("耗费时间为：" + (end - start));
-		
 	}
 
 }

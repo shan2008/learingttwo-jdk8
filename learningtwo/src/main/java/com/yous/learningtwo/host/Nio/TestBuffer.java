@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.Nio;
+package com.yous.learningtwo.host.nio;
 
 import java.nio.ByteBuffer;
 

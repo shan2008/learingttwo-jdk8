@@ -1,7 +1,6 @@
 package com.yous.learningtwo.host.rmi;
 
 import javafx.scene.effect.SepiaTone;
-import org.springframework.remoting.caucho.HessianProxyFactoryBean;
 
 import java.rmi.Naming;
 import java.util.HashSet;

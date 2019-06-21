@@ -1,5 +1,6 @@
-package com.yous.learningtwo.host;
+package com.yous.learningtwo.host.TextSqlUtils;
 
+import org.apache.commons.lang3.StringUtils;
 import org.junit.Test;
 
 import java.io.*;
@@ -18,9 +19,6 @@ import java.util.stream.Stream;
  * @date 2018/11/6.
  */
 public class TxtlUtil {
-    private static final String EXCEL_XLS = "xls";
-    private static final String EXCEL_XLSX = "xlsx";
-
 
     @Test
     public void readWrite() throws Exception {
@@ -38,7 +36,7 @@ public class TxtlUtil {
 
         String string = null;
         int i = 0;
-        List<String> srcId = new ArrayList<>();
+        List<String> sqls = new ArrayList<>();
         try (BufferedReader bfIn = new BufferedReader(new InputStreamReader(new FileInputStream(src), "gbk"));
              BufferedWriter bfOut1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(dest1, true), "gbk"))) {
             while ((string = bfIn.readLine()) != null) {
@@ -47,7 +45,7 @@ public class TxtlUtil {
                                 map(o -> o.trim()).collect(Collectors.toList());
 
                 String sql = ransfer(split);
-                srcId.add(sql);
+                sqls.add(sql);
 
                 bfOut1.write(sql + "\r\n");
                 bfOut1.flush();
@@ -55,16 +53,8 @@ public class TxtlUtil {
             }
         }
 
-        List<String> des = readId();
-
-
-        System.out.println("done" + i);
-
-        srcId.removeAll(des);
-
-        System.out.println(srcId.size());
-
-        srcId.forEach(System.out::println);
+        sqls.forEach(System.out::println);
+        System.out.println("done:"+i);
     }
 
     private List<String> readId() {
@@ -74,7 +64,7 @@ public class TxtlUtil {
         List<String> result = new ArrayList<>();
         try (BufferedReader bfIn = new BufferedReader(new InputStreamReader(new FileInputStream(src), "gbk"))) {
             while ((string = bfIn.readLine()) != null) {
-                String split =string.trim();
+                String split = string.trim();
             }
 
             bfIn.close();
@@ -94,13 +84,19 @@ public class TxtlUtil {
      */
     private String ransfer(List<String> split) {
         String result = "";
-
         if (split.size() == 3) {
-            result += "update wld_im_push_template set senddate=%s,groupFlowType=0 where id=%s;";
-            result = String.format(result, split.get(1), split.get(0));
+            FixPushCategoryEnum first = FixPushCategoryEnum.getEnumByDesc(split.get(1));
+            FixPushSecondCategoryEnum second = FixPushSecondCategoryEnum.getEnumByDesc(split.get(2));
+            if (first != null && second != null) {
+                result += "update wld_im_push_template set Category=%d,SecCategory=%d where id=%s;";
+                result = String.format(result, first.getValue(), second.getValue(), split.get(0));
+            }
         }
 
-        result += split.get(0);
+        if (StringUtils.isEmpty(result)) {
+            System.out.println(split);
+            throw new RuntimeException();
+        }
 
         return result;
     }

@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.Nio;
+package com.yous.learningtwo.host.nio;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -45,7 +45,7 @@ public class TestNonBlockingNIO {
 		
 		//3. 分配指定大小的缓冲区
 		ByteBuffer buf = ByteBuffer.allocate(1024);
-		
+
 		//4. 发送数据给服务端
 		Scanner scan = new Scanner(System.in);
 		
