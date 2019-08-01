@@ -16,10 +16,9 @@ import java.util.*;
 public class Demo4 {
 
     public static void main(String[] args) throws Exception {
-
-      Time s=  Time.valueOf(LocalTime.parse("12:01"));
-        System.out.println( s);   ;
-
+        String a="aBcd";
+        String b="abcD";
+        System.out.println(a.equalsIgnoreCase(b));
 
 
 

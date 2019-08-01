@@ -20,7 +20,6 @@ public class MyTest {
 
     @Test
     public void client() {
-
         try (SocketChannel clientChannel = SocketChannel.open(new InetSocketAddress("127.0.0.1", 9898))) {
             ByteBuffer buf = ByteBuffer.allocate(1024);
 
