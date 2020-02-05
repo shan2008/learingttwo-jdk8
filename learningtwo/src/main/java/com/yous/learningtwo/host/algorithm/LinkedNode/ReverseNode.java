@@ -1,12 +1,15 @@
-package com.yous.learningtwo.host.algorithm;
+package com.yous.learningtwo.host.algorithm.LinkedNode;
 
 import org.junit.Test;
+
+import java.util.Random;
 
 /**
  * @author syou
  * @date 2019/6/26.
  */
 public class ReverseNode {
+    private final static  Random random=new Random();
 
 
     @Test
@@ -134,14 +137,10 @@ public class ReverseNode {
         return pre;
     }
 
+
+
+
+
 }
 
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}

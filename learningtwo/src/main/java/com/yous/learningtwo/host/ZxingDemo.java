@@ -9,6 +9,7 @@ import com.google.zxing.common.HybridBinarizer;
 import com.mysql.jdbc.StringUtils;
 
 import org.apache.commons.codec.binary.Base64;
+import org.junit.Test;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -29,9 +30,12 @@ import java.util.concurrent.FutureTask;
  */
 public class ZxingDemo {
 
-    public static void main(String[] args) throws Exception {
+    @Test
+    public  void main1() throws Exception {
 
-      ExecutorService service = Executors.newCachedThreadPool();
+        String file = "D:\\Users\\syou\\Desktop\\22.png";
+
+        System.out.println(loadPic(file));
 
        /* List<String>  a=new ArrayList<>();
         a.add("sas");
@@ -52,6 +56,26 @@ public class ZxingDemo {
         String file = "D:\\Users\\syou\\Desktop\\sendlike\\米兰361.png";
         decodeQcode(file);*/
 
+
+
+    }
+
+
+    private static String loadPic(String path) {
+        InputStream inputStream = null;
+        byte[] data = null;
+        try {
+
+            inputStream = new FileInputStream(path);
+            data = new byte[inputStream.available()];
+            inputStream.read(data);
+            inputStream.close();
+            System.out.println(data);
+        } catch (Exception e) {
+
+        }
+
+        return java.util.Base64.getEncoder().encodeToString(data);
     }
 
 
@@ -214,7 +238,6 @@ public class ZxingDemo {
         return Arrays.asList(".JPG", ".JPEG", ".PNG", ".GIF", ".BMP").contains(suffix.toUpperCase());
 
     }
-
 
 
     private static void downLoad() {

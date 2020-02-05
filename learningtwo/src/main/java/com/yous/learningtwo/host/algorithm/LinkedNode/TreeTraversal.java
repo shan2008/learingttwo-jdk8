@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.algorithm;
+package com.yous.learningtwo.host.algorithm.LinkedNode;
 
 import org.junit.Test;
 import java.util.*;

@@ -8,9 +8,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -19,6 +17,29 @@ import java.util.stream.Stream;
  * @date 2018/11/6.
  */
 public class TxtlUtil {
+
+    private Map<Integer, String> configMap = new HashMap<>();
+
+    {
+        configMap.put(1, "总体评价");
+        configMap.put(2, "描述相符");
+        configMap.put(3, "游玩体验");
+        configMap.put(4, "预订流程");
+        configMap.put(5, "商家服务");
+        configMap.put(6, "取还便捷");
+        configMap.put(7, "信号强度");
+        configMap.put(8, "待机能力");
+        configMap.put(9, "出游类型");
+        configMap.put(10, "服务分");
+        configMap.put(11, "行程安排");
+        configMap.put(12, "司机服务");
+        configMap.put(13, "车载体验");
+        configMap.put(14, "导游服务");
+        configMap.put(15, "服务体验");
+        configMap.put(16, "使用方便");
+        configMap.put(17, "信号稳定");
+    }
+
 
     @Test
     public void readWrite() throws Exception {
@@ -37,6 +58,8 @@ public class TxtlUtil {
         String string = null;
         int i = 0;
         List<String> sqls = new ArrayList<>();
+
+        Map<Integer, List<Integer>> map = new HashMap<>();
         try (BufferedReader bfIn = new BufferedReader(new InputStreamReader(new FileInputStream(src), "gbk"));
              BufferedWriter bfOut1 = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(dest1, true), "gbk"))) {
             while ((string = bfIn.readLine()) != null) {
@@ -44,17 +67,50 @@ public class TxtlUtil {
                         .filter(org.apache.commons.lang3.StringUtils::isNotBlank).
                                 map(o -> o.trim()).collect(Collectors.toList());
 
-                String sql = ransfer(split);
-                sqls.add(sql);
-
-                bfOut1.write(sql + "\r\n");
-                bfOut1.flush();
-                i++;
+                if (split.size() == 3) {
+                    int grade = Integer.valueOf(split.get(0));
+                    if (!map.containsKey(grade)) {
+                        List<Integer> cetegoryIds = new ArrayList<>();
+                        cetegoryIds.add(Integer.valueOf(split.get(1)));
+                        map.put(grade, cetegoryIds);
+                    } else {
+                        map.get(grade).add(Integer.valueOf(split.get(1)));
+                    }
+                    configMap.put(grade, split.get(2));
+                }
             }
         }
 
-        sqls.forEach(System.out::println);
-        System.out.println("done:"+i);
+
+        System.out.println(configMap);
+        System.out.println(map);
+
+        System.out.println(genenrateSql(map));
+
+
+    }
+
+
+    private String genenrateSql(Map<Integer, List<Integer>> map) {
+        StringBuffer buffer = new StringBuffer();
+        configMap.forEach((k, v) -> {
+            // 生成sql
+            if (map.containsKey(k)) {
+                String productIds="["+map.get(k).stream().sorted(Comparator.comparing(Integer::valueOf)).map(String::valueOf)
+                        .collect(Collectors.joining(","))+"]";
+                buffer.append("INSERT INTO ucp_biz_config_subitem (UcpBizId, OriginalConfigId, ItemCategory, ItemType, Title, Description, DisplaySeq, Status) ")
+                        .append("VALUES (6, " + k + ", '"+productIds+"', 2, '" + v + "','', " + k + ", 1);")
+                        .append("\r\n");
+
+            } else {
+                buffer.append("INSERT INTO ucp_biz_config_subitem (UcpBizId, OriginalConfigId, ItemCategory, ItemType, Title, Description, DisplaySeq, Status) ")
+                        .append("VALUES (6, " + k + ", '', 2, '" + v + "','', " + k + ", 1);")
+                        .append("\r\n");
+            }
+
+        });
+
+        return buffer.toString();
     }
 
     private List<String> readId() {
