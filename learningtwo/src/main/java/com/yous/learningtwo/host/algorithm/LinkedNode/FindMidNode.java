@@ -29,6 +29,7 @@ public class FindMidNode {
         return nodes.get(nodes.size() / 2);
     }
 
+<<<<<<< HEAD
 
     public ListNode middleNode2(ListNode head) {
         if (head == null) {
@@ -46,4 +47,6 @@ public class FindMidNode {
     }
 
 
+=======
+>>>>>>> b44c4614f4d921fef8ca2e686d598c8663fda9a3
 }
