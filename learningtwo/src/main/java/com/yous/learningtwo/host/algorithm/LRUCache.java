@@ -20,22 +20,4 @@ public class LRUCache<K, v> extends LinkedHashMap {
     protected boolean removeEldestEntry(Map.Entry eldest) {
         return size() > cacheSize;
     }
-
-    public static void main(String[] args) {
-        Map<Integer, String> map = new LRUCache<>(4);
-        map.put(1, "a");
-        map.put(2, "b");
-        map.put(4, "c");
-        map.put(6, "d");
-        map.put(7, "d");
-        map.forEach((K,v)->{
-            System.out.println(K+":"+v);
-        });
-
-    }
-
-
-    public static void test(long id){
-
-    }
 }

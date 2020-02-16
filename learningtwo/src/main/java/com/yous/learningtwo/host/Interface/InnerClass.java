@@ -30,7 +30,7 @@ public class InnerClass {
     }
 
 
-    static class Inner2{
+   public static class Inner2{
 
     }
 }

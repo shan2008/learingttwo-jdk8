@@ -5,14 +5,17 @@ package com.yous.learningtwo.host.AbstractClass;
  * @date 2019/5/13.
  */
 public class Man extends AbstractPerson {
+    public Man(){
+        System.out.println("man...");
+    }
     @Override
     public String getName() {
-        return null;
+        return "Man name";
     }
 
 
     @Override
     public int getId() {
-        return super.getId();
+        return 456;
     }
 }

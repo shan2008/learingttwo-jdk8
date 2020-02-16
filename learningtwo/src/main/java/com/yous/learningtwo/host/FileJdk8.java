@@ -22,41 +22,13 @@ public class FileJdk8 {
     }
 
     public static void main(String[] args) {
+        Map<String, Integer> map = new HashMap<>(3);
 
-        /*System.out.println(Runtime.getRuntime().maxMemory() / (1024 * 1024 * 1024));
-        List<Byte[]> list = new ArrayList<>();
-        for (int i = 0; i < 1024; i++) {
-            list.add(new Byte[1024 * 1024]);
-        }
+    }
 
 
-        File[] hiddenFile = new File(".").listFiles(r -> r.isHidden()
-        );
-        List<Student> lists = new ArrayList<>();
-        lists.add(new Student(1, "hah"));
-        lists.add(new Student(2, "heihei"));
-        lists.add(new Student(3, "ee"));
-        List<Student> a = filterStudent(lists, r -> r.getId() > 2);
-        lists.sort(Comparator.comparing(Student::getId).reversed());
-
-        Student student = new Student(1);
-        Predicate<Student> studentPredicate = s -> s.getId() > 1;
-        studentPredicate.and(x -> x.getName().equals("aa"));*/
-
-        int[] words = {1, 2, 3};
-
-        Student s = null;
-        List<Integer> list = new ArrayList<>();
-        list.add(1);
-        list.add(2);
-
-        boolean a = list.stream().map(x -> null).filter(Objects::nonNull).anyMatch(x -> x.equals(1));
-        System.out.println(a);
-
-
-
-
-
+    private static Student getStudent() {
+        return new Student();
     }
 
 
