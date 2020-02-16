@@ -21,12 +21,12 @@ public class NodeUtils {
     }
 
 
-    public static ListNode generateNode(int k) {
-        ListNode head = new ListNode(r.nextInt(50));
+    public static ListNode generateNode(int k,int range) {
+        ListNode head = new ListNode(r.nextInt(range));
         ListNode temp = head;
         k--;
         while (k-- > 0) {
-            temp.next = new ListNode(r.nextInt(50));
+            temp.next = new ListNode(r.nextInt(range));
             temp = temp.next;
         }
 
@@ -34,11 +34,10 @@ public class NodeUtils {
     }
 
 
-    public static ListNode generateNoRepeatNode(int k) {
+    public static ListNode generateNoRepeatNode(int k,int range) {
         List<Integer> list = new ArrayList<>();
-        ListNode node = new ListNode(0);
         while (k-- > 0) {
-            int num = r.nextInt(20);
+            int num = r.nextInt(range);
             if (list.contains(num)) {
                 k++;
             } else {

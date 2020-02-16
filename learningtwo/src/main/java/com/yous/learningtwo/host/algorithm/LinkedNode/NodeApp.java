@@ -12,20 +12,68 @@ import java.util.Random;
  */
 public class NodeApp {
 
+    ListNode repeatNode = NodeUtils.generateNode(8, 5);
+    ListNode norepeatNode = NodeUtils.generateNoRepeatNode(5, 10);
 
     @Test
     public void mainTest() {
-        NodeUtils.print(NodeUtils.generateNoRepeatNode(10));
+        NodeUtils.print(NodeUtils.generateNoRepeatNode(5, 10));
     }
 
 
     @Test
     public void TestReverseNode() {
-        ListNode head = NodeUtils.generateNode(2);
+        ListNode head = NodeUtils.generateNode(2, 3);
         NodeUtils.print(head);
         System.out.println("********************");
         head = new ReverseKNode().reverseKNode(head, 2);
         NodeUtils.print(head);
     }
+
+
+    @Test
+    public void testDeleteNode() {
+        NodeUtils.print(repeatNode);
+        ListNode node = new DeleteRepeatNode().deleteRepeatNode(repeatNode);
+        NodeUtils.print(node);
+    }
+
+    @Test
+    public void testDeleteNode2() {
+        NodeUtils.print(repeatNode);
+        ListNode node = new DeleteRepeatNode().deleteRepeatNode2(repeatNode);
+        NodeUtils.print(node);
+    }
+
+    @Test
+    public void testIndexKnode() {
+        NodeUtils.print(norepeatNode);
+        ListNode node = new IndexKnode().indexKnode(norepeatNode, 3);
+        if (node != null) {
+            System.out.println(node.val);
+        } else {
+            System.out.println("k 无效");
+        }
+    }
+
+    @Test
+    public void testReversePrintNode() {
+        NodeUtils.print(repeatNode);
+        new ReversePrintNode().reversePrintNode(repeatNode);
+        System.out.println("*********************");
+        new ReversePrintNode().reversePrintNode2(repeatNode);
+    }
+
+    @Test
+    public void testMiddleNode() {
+
+        NodeUtils.print(norepeatNode);
+        ListNode mid = new FindMidNode().middleNode2(norepeatNode);
+        System.out.println(mid.val);
+
+    }
+
+
+
 
 }

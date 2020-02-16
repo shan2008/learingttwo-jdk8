@@ -29,4 +29,21 @@ public class FindMidNode {
         return nodes.get(nodes.size() / 2);
     }
 
+
+    public ListNode middleNode2(ListNode head) {
+        if (head == null) {
+            return head;
+        }
+
+        ListNode fast = head;
+        ListNode slow = head;
+        while (fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+
+        return slow;
+    }
+
+
 }
