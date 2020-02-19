@@ -1,6 +1,5 @@
 package com.yous.learningtwo.host.SingletonDemo;
 
-import sun.text.normalizer.UBiDiProps;
 
 /**
  * @author syou

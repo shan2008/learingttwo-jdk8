@@ -12,37 +12,8 @@ import java.util.Random;
  */
 public class NodeApp {
 
-<<<<<<< HEAD
     ListNode repeatNode = NodeUtils.generateNode(8, 5);
-    ListNode norepeatNode = NodeUtils.generateNoRepeatNode(5, 10);
-
-    @Test
-    public void mainTest() {
-        NodeUtils.print(NodeUtils.generateNoRepeatNode(5, 10));
-=======
-
-    @Test
-    public void mainTest() {
-        NodeUtils.print(NodeUtils.generateNoRepeatNode(10));
->>>>>>> b44c4614f4d921fef8ca2e686d598c8663fda9a3
-    }
-
-
-    @Test
-    public void TestReverseNode() {
-<<<<<<< HEAD
-        ListNode head = NodeUtils.generateNode(2, 3);
-=======
-        ListNode head = NodeUtils.generateNode(2);
->>>>>>> b44c4614f4d921fef8ca2e686d598c8663fda9a3
-        NodeUtils.print(head);
-        System.out.println("********************");
-        head = new ReverseKNode().reverseKNode(head, 2);
-        NodeUtils.print(head);
-    }
-
-<<<<<<< HEAD
-
+    ListNode norepeatNode = NodeUtils.generateNoRepeatNode(5);
     @Test
     public void testDeleteNode() {
         NodeUtils.print(repeatNode);
@@ -84,10 +55,4 @@ public class NodeApp {
         System.out.println(mid.val);
 
     }
-
-
-
-
-=======
->>>>>>> b44c4614f4d921fef8ca2e686d598c8663fda9a3
 }

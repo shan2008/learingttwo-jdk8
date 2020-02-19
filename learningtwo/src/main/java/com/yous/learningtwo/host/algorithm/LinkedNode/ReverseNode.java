@@ -124,6 +124,11 @@ public class ReverseNode {
     }
 
 
+    /**
+     * 反转链表
+     * @param head
+     * @return
+     */
     public ListNode reverseNode(ListNode head) {
         ListNode pre = null;
         ListNode curr = head;

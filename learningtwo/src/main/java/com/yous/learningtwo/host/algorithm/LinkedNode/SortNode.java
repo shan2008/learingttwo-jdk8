@@ -17,49 +17,57 @@ public class SortNode {
         node1.next.next.next = new ListNode(5);
         NodeUtils.print(node1);
 
-        node1 = sortList(node1);
+        node1 = sortNodeList(node1);
         NodeUtils.print(node1);
     }
 
-
-    public ListNode sortList(ListNode head) {
-        return head == null ? null : sort(head);
-    }
-
-
-    public ListNode sort(ListNode head) {
+    /**
+     * 链表排序
+     *
+     * @param head
+     * @return
+     */
+    public ListNode sortNodeList(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
-        ListNode slow = head, fast = head.next, r, l;
+
+        ListNode fast = head.next, slow = head, r, l;
         while (fast != null && fast.next != null) {
-            slow = slow.next;
             fast = fast.next.next;
+            slow = slow.next;
         }
 
-        r = sort(slow.next);
+        r = sortNodeList(slow.next);
         slow.next = null;
-        l = sort(head);
+        l = sortNodeList(head);
 
-        return merge(l, r);
+
+        return mergeSortNode(r, l);
     }
 
-    public ListNode merge(ListNode l, ListNode r) {
+
+    public ListNode mergeSortNode(ListNode l1, ListNode l2) {
         ListNode tempHead = new ListNode(-1);
-        ListNode p = tempHead;
-        while (l != null && r != null) {
-            if (r.val < l.val) {
-                p.next = r;
-                r = r.next;
+        ListNode retNextHead = tempHead;
+        while (l1 != null && l2 != null) {
+            if (l1.val > l2.val) {
+                tempHead.next = l2;
+                l2 = l2.next;
             } else {
-                p.next = l;
-                l = l.next;
+                tempHead.next = l1;
+                l1 = l1.next;
             }
-            p = p.next;
+            tempHead=tempHead.next;
+        }
+        if (l1 == null) {
+            tempHead.next = l2;
+        }
+        if (l2 == null) {
+            tempHead.next = l1;
         }
 
-        p.next = l == null ? r : l;
-        return tempHead.next;
+        return retNextHead.next;
     }
 
 }
