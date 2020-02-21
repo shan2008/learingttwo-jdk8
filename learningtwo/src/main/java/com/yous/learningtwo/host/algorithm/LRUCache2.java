@@ -17,6 +17,7 @@ public class LRUCache2 {
                 return cache.size() > capacity;
             }
         };
+
     }
 
 }

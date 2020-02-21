@@ -2,6 +2,7 @@ package com.yous.learningtwo.host.algorithm.LinkedNode;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author syou
@@ -41,7 +42,6 @@ public class FindMidNode {
             fast = fast.next.next;
             slow = slow.next;
         }
-
         return slow;
     }
 
