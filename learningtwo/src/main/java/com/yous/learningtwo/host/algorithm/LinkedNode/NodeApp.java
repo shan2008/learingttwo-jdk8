@@ -5,6 +5,7 @@ import org.junit.Test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.Stack;
 
 /**
  * @author syou
@@ -49,10 +50,33 @@ public class NodeApp {
 
     @Test
     public void testMiddleNode() {
-
+        reversePrint(null);
         NodeUtils.print(norepeatNode);
         ListNode mid = new FindMidNode().middleNode2(norepeatNode);
         System.out.println(mid.val);
 
+    }
+
+
+    public int[] reversePrint(ListNode head) {
+        if(head==null){
+            return new int[0];
+        }
+        Stack<Integer> stack=new Stack<>();
+
+        int len=0;
+        while(head!=null){
+            stack.push(head.val);
+            head=head.next;
+            len++;
+        }
+
+        int[] ret=new int[len];
+        int i=0;
+        while(!stack.isEmpty()){
+            ret[i++]=stack.pop();
+        }
+
+        return ret;
     }
 }

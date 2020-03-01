@@ -32,4 +32,31 @@ public class StringAlg {
         return dp[s.length()];
     }
 
+
+
+    public int getMaxSub(String str1,String str2){
+        if(str2==null || str1==null){
+            return 0;
+        }
+
+        int[][] dp=new int[str1.length()][str2.length()];
+        int max=0;
+        for(int i=0;i<str1.length();i++){
+            for(int j=0;j<str2.length();j++){
+                if(str1.charAt(i)==str2.charAt(j)){
+                    if(i==0 && j==0){
+                        dp[i][j]=1;
+                    }else
+                    {
+                        dp[i][j]=dp[i-1][j-1]+1;
+                    }
+                    max=Math.max(max,dp[i][j]);
+                }else{
+                    dp[i][j]=0;
+                }
+            }
+        }
+        return max;
+    }
+
 }
