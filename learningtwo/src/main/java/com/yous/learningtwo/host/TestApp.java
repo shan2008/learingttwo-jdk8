@@ -18,6 +18,7 @@ public class TestApp {
         BigDecimal bigDecimal=BigDecimal.valueOf(3);
 
         System.out.println(bigDecimal.compareTo(new BigDecimal(3)));
+        Map<String,String> a=new HashMap<>();
 
     }
 

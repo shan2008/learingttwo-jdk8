@@ -24,4 +24,18 @@ public class ArrayApp {
         new SortArray().bubSort(array);
         ArrayUtils.print(array);
     }
+
+    @Test
+    public void testInsertSort() {
+        ArrayUtils.print(array);
+        new SortArray().insertSort(array);
+        ArrayUtils.print(array);
+    }
+
+    @Test
+    public void testQuickSort() {
+        ArrayUtils.print(array);
+        new SortArray().quickSort(array,0,array.length-1);
+        ArrayUtils.print(array);
+    }
 }
