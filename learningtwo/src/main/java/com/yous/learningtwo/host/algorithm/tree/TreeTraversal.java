@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.algorithm.LinkedNode;
+package com.yous.learningtwo.host.algorithm.tree;
 
 import org.junit.Test;
 import java.util.*;
@@ -207,12 +207,3 @@ public class TreeTraversal {
 }
 
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}

@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.algorithm.LinkedNode;
+package com.yous.learningtwo.host.algorithm.StringAlg;
 
 import org.junit.Test;
 

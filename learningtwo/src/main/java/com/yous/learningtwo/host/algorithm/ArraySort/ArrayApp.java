@@ -1,8 +1,7 @@
 package com.yous.learningtwo.host.algorithm.ArraySort;
 
+import com.yous.learningtwo.host.algorithm.ArrayUtils;
 import org.junit.Test;
-
-import java.util.Arrays;
 
 /**
  * @author syou

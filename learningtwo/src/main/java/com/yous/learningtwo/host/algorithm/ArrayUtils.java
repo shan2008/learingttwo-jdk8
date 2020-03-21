@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.algorithm.ArraySort;
+package com.yous.learningtwo.host.algorithm;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -29,7 +29,8 @@ public class ArrayUtils {
         }
         String string = Arrays.stream(array).boxed()
                 .map(x -> String.valueOf(x))
-                .collect(Collectors.joining(",", "", ""));
+                .collect(Collectors.joining(","));
+
         System.out.println(string);
     }
 }
