@@ -23,4 +23,12 @@ public class BigCar extends Car {
     public int getWeel() {
         return 4;
     }
+
+     public class  inner{
+
+    }
+
+
+
+
 }

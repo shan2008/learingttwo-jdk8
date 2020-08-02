@@ -1,10 +1,12 @@
 package com.yous.learningtwo.host;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+import java.math.BigDecimal;
 import java.util.*;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.*;
+import java.util.stream.Collectors;
 
 /**
  * Created by syou on 2018/3/18.
@@ -12,6 +14,11 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class ImageVideo {
 
     public static void main(String[] args) {
+        while (true){
+            System.out.println("a");
+        }
+
+
 
     }
 

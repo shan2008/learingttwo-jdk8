@@ -9,8 +9,15 @@ import java.io.Serializable;
  * @date 2019/7/7.
  */
 public class SingletonInstance implements Serializable {
+    private int i;
+    private String name;
+    private SingletonInstance(int i,String name){
+        this.i=i;
+        this.name=name;
+
+    }
     private static class MyInstance {
-        private static final SingletonInstance instance = new SingletonInstance();
+        private static final SingletonInstance instance = new SingletonInstance(1,"shan");
     }
 
 
@@ -20,11 +27,23 @@ public class SingletonInstance implements Serializable {
 
 
     private void readObject(ObjectInputStream in) {
-        System.out.println("readObject......");
+       try {
+           int  s=in.readInt();
+           System.out.println("readObject......");
+       }catch (Exception e){
+           //
+       }
+
     }
 
     private void writeObject(ObjectOutputStream out) {
-        System.out.println("writeObject......");
+        try {
+            out.writeInt(2);
+            System.out.println("writeObject......");
+        }catch (Exception e){
+
+        }
+
     }
 
     protected Object readResolve() {

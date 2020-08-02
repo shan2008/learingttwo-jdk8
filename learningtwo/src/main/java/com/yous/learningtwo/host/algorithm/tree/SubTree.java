@@ -3,7 +3,6 @@ package com.yous.learningtwo.host.algorithm.tree;
 public class SubTree {
 
     public boolean isSubStructure(TreeNode A, TreeNode B) {
-        Iterable
         if(A==null || B==null){
             return false;
         }

@@ -49,6 +49,8 @@ public class SortArray {
                 }
             }
         }
+
+        return;
     }
 
 
@@ -62,20 +64,22 @@ public class SortArray {
             return;
         }
 
-        for (int i = 0; i < array.length; i++) {
-            int temp = array[i];
-            //从要插入的元素左边数组开始
-            int j;
-            for (j = i - 1; j >= 0 && array[j] > temp; j--) {
-                array[j + 1] = array[j];
+        for (int i = 1; i < array.length; i++) {   // 从第二个元素开始遍历
+            int j = i;
+            while (j > 0 && array[j] < array[j - 1]) {     // 将当前元素移动到合适的位置
+                int temp = array[j];
+                array[j] = array[j - 1];
+                array[j - 1] = temp;
+                j--;
             }
-            array[j + 1] = temp;
         }
+
     }
 
 
     /**
      * 快速排序法
+     *
      * @param array
      * @param low
      * @param high
@@ -85,7 +89,7 @@ public class SortArray {
             return;
         }
 
-        if(low>=high){
+        if (low >= high) {
             return;
         }
 
@@ -102,7 +106,7 @@ public class SortArray {
             }
 
             // 左边找一个比基准值大的
-            while (i < j && array[i] < target)
+            while (i < j && array[i] <= target)
                 i++;
 
             if (i < j) {
