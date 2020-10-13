@@ -1,6 +1,7 @@
 package com.yous.learningtwo.host.algorithm.tree;
 
 import org.junit.Test;
+
 import java.util.*;
 
 /**
@@ -38,8 +39,8 @@ public class TreeTraversal {
     }
 
     @Test
-    public void Test2(){
-        int[] nums={2,2,2,0,2};
+    public void Test2() {
+        int[] nums = {2, 2, 2, 0, 2};
 
         System.out.println(findNumberOfLIS(nums));
     }
@@ -50,20 +51,20 @@ public class TreeTraversal {
             return 0;
         }
 
-        if(nums.length==1){
+        if (nums.length == 1) {
             return 1;
         }
 
-        if(nums.length==2){
-            if(nums[0]<nums[1]){
+        if (nums.length == 2) {
+            if (nums[0] < nums[1]) {
                 return 1;
-            }else {
+            } else {
                 return 2;
             }
         }
 
         int count = 0;
-        for (int i = 0; i < nums.length-1; i++) {
+        for (int i = 0; i < nums.length - 1; i++) {
             if (nums[i] < nums[i + 1]) {
                 continue;
             } else {
@@ -71,8 +72,8 @@ public class TreeTraversal {
             }
         }
 
-        if(nums[nums.length-2]>=nums[nums.length-1]){
-            return count+1;
+        if (nums[nums.length - 2] >= nums[nums.length - 1]) {
+            return count + 1;
         }
 
         return count;
@@ -165,24 +166,11 @@ public class TreeTraversal {
     }
 
 
-    public List<List<Integer>> levelOrderBottom(TreeNode root) {
-        if (root == null) {
-            return Collections.emptyList();
-        }
-
-        TreeNode left = root.left;
-        TreeNode right = root.right;
-        List<List<Integer>> result = new ArrayList<>();
-        result.add(Arrays.asList(root.val));
-        while (left != null || right != null) {
-            List<Integer> layer = new ArrayList<>();
-
-
-        }
-
-        return result;
-    }
-
+    /**
+     * @param node
+     * @param dep
+     * @return
+     */
 
     private Integer maxXDep(TreeNode node, Integer dep) {
         if (node == null) {
@@ -203,6 +191,35 @@ public class TreeTraversal {
         return dep;
     }
 
+
+    public List<Integer> postorderTraversal(TreeNode root) {
+        if (root == null) {
+            return Collections.emptyList();
+        }
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        while (true) {
+            while (root != null) {
+                stack.push(root);
+                stack.push(root);
+                root = root.left;
+            }
+
+            if (stack.isEmpty()) {
+                break;
+            }
+            root = stack.pop();
+            if (!stack.isEmpty() && stack.peek() == root) {
+                root = root.right;
+            } else {
+                result.add(root.val);
+                root = null;
+            }
+        }
+
+        return result;
+
+    }
 
 }
 

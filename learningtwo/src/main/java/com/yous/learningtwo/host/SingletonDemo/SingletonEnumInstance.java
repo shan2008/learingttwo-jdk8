@@ -9,16 +9,12 @@ public enum SingletonEnumInstance {
     INSTANCEFACTROY;
     private MyInstance instance = null;
 
-    private SingletonEnumInstance() {
+    SingletonEnumInstance() {
         instance = new MyInstance();
     }
 
 
-    public MyInstance instance() {
-        return instance;
-    }
-
     public static MyInstance getInstance() {
-        return SingletonEnumInstance.INSTANCEFACTROY.instance();
+        return INSTANCEFACTROY.instance;
     }
 }

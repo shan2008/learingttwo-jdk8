@@ -120,4 +120,47 @@ public class SortArray {
 
     }
 
+
+
+
+
+
+    public void quickSort1(int[] array, int low, int high){
+        if(array==null){
+            return;
+        }
+
+        if(low>=high){
+            return;
+        }
+
+        int i=low;
+        int j=high;
+
+        int target=array[i];
+        while (i<j){
+             while (j>0 && array[j]>=target){
+                 j--;
+             }
+
+             if(i<j){
+                 array[i++]=array[j];
+             }
+
+             while (i<j && array[i]<=target){
+                 i++;
+             }
+
+            if(i<j){
+                array[j--]=array[i];
+            }
+
+
+        }
+
+
+
+    }
+
+
 }

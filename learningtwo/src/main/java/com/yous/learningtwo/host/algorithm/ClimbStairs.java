@@ -4,6 +4,8 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ClimbStairs {
     Map<Integer, Integer> map = new HashMap<>();
@@ -11,8 +13,13 @@ public class ClimbStairs {
 
     @Test
     public void test() {
+        Pattern p = Pattern.compile("[0-9a-zA-Z]{1,}");
+        Matcher m = p.matcher("");
+
         int result = climbStairs(45);
         int result2 = climbStairs2(45);
+        System.out.println(result);
+        System.out.println(result2);
 
         System.out.println(result == result2);
     }
@@ -60,7 +67,7 @@ public class ClimbStairs {
         int f2 = 2;
 
         int result = 0;
-        for (int i = 3; i <= n; i++) {
+        for (int i = 3; i < n; i++) {
             result = f1 + f2;
             f1 = f2;
             f2 = result;
