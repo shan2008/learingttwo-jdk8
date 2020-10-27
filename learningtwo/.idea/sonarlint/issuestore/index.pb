@@ -210,3 +210,5 @@ a
 1src/main/java/com/yous/learningtwo/host/Test.java,d\a\da676b391d3422cdd5b5fc5e93f6066e7708acc1
 `
 0src/main/java/com/yous/learningtwo/host/App.java,9\3\93c7cd3ac51541e5cb0814f213b2762ac6ae16a8
+q
+Asrc/main/java/com/yous/learningtwo/host/algorithm/MakeSquare.java,d\8\d87ffc78265d0d6e0c1ef63b22ae88ec464b883d
