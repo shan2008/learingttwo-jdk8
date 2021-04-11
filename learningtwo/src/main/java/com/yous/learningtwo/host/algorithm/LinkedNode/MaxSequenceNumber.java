@@ -42,4 +42,28 @@ public class MaxSequenceNumber {
         return result;
     }
 
+
+
+
+    public int majorityElement(int[] nums) {
+        if(nums==null || nums.length<=0){
+            return -1;
+        }
+
+        int result=0;
+        int times=0;
+        for(int i=0;i<nums.length;i++){
+            if(times==0){
+                result=nums[i];
+            }
+
+            if(result==nums[i]){
+                times++;
+            }else{
+                times--;
+            }
+        }
+
+        return result;
+    }
 }

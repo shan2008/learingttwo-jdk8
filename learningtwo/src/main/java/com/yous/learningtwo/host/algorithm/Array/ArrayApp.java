@@ -1,4 +1,4 @@
-package com.yous.learningtwo.host.algorithm.ArraySort;
+package com.yous.learningtwo.host.algorithm.Array;
 
 import com.yous.learningtwo.host.algorithm.ArrayUtils;
 import org.junit.Test;
