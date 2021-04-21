@@ -9,27 +9,13 @@ public class tIntersectionNode {
             return null;
         }
 
-        ListNode tailA=headA;
-        ListNode tailB=headB;
-        while (tailA.next!= null) {
-            tailA = tailA.next;
+        ListNode pA=headA,pB=headB;
+        while (headA!=headB){
+            pA=pA==null?headB:pA.next;
+            pB=pB==null?headA:pB.next;
         }
 
-        while (tailB.next!= null) {
-            tailB = tailB.next;
-        }
-
-
-        while (headA.next != null && headB.next != null) {
-            if (headA.val == headB.val) {
-                return headA;
-            }
-
-            headA = headA.next;
-            headB = headB.next;
-        }
-
-        return null;
+        return headA;
     }
 
 }
