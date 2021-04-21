@@ -17,7 +17,7 @@
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.38" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:javase:3.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.google.zxing:core:3.0.0" level="project" />
-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.29" level="project" />
+    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.75" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-jpeg:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-core:3.3.2" level="project" />
     <orderEntry type="library" name="Maven: com.twelvemonkeys.imageio:imageio-metadata:3.3.2" level="project" />

@@ -37,7 +37,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
-            <version>1.1.29</version>
+            <version>1.2.75</version>
         </dependency>
 
 
@@ -70,8 +70,6 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.14</version>
         </dependency>
-
-
 
         <dependency>
         <groupId>junit</groupId>
