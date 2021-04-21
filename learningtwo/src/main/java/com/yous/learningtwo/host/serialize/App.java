@@ -1,6 +1,7 @@
 package com.yous.learningtwo.host.serialize;
 
 import java.io.*;
+import java.util.HashSet;
 
 /**
  * @author syou
@@ -9,16 +10,27 @@ import java.io.*;
 public class App {
 
     public static void main(String[] args) throws Exception {
-        try(ObjectOutputStream outputStream=new ObjectOutputStream(new FileOutputStream("D:\\Users\\syou\\Desktop\\test\\out.obj"))) {
-            outputStream.writeObject(new Man());
+
+        Man man=new Man();
+        man.setSex(true);
+
+        Person person=new Person("youshan",1);
+        man.setPerson(person);
+
+        try(ObjectOutputStream outputStream=new ObjectOutputStream(new FileOutputStream("out.obj"))) {
+            outputStream.writeObject(man);
+            outputStream.reset();
+            man.setSex(false);
+            outputStream.writeObject(man);
         }catch (Exception e){
             System.out.println(e);
         }
 
-        try(ObjectInputStream  inputStream = new ObjectInputStream(new FileInputStream("D:\\Users\\syou\\Desktop\\test\\out.obj"))) {
-            Person p = (Person) inputStream.readObject();
-
+        try(ObjectInputStream  inputStream = new ObjectInputStream(new FileInputStream("out.obj"))) {
+            Man p = (Man) inputStream.readObject();
+            Man p1 = (Man) inputStream.readObject();
             System.out.println(p);
         }
+
     }
 }

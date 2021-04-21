@@ -9,14 +9,21 @@ public class RemoveNthFromEnd {
 
         ListNode fast = head;
         ListNode slow = head;
+        for (int i = 0; i < n; i++) {
+            if (fast != null) {
+                fast = fast.next;
+            }
+        }
+        if (fast == null) {
+            return head.next;
+        }
 
-        while (fast != null && fast.next != null) {
-            fast = fast.next.next;
+        while (fast.next != null) {
+            fast = fast.next;
             slow = slow.next;
         }
 
-        slow.next=slow.next.next;
-
+        slow.next = slow.next.next;
         return head;
     }
 }

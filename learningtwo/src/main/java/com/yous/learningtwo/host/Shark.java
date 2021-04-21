@@ -1,6 +1,7 @@
 package com.yous.learningtwo.host;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author syou
@@ -19,12 +20,10 @@ public class Shark {
 
         List<List<String>> aa = Arrays.asList(a1, a2);
 
-        String string1 = aa.stream().flatMap(Collection::stream)
-                .sorted()
-                .findFirst()
-                .orElse("s");
+        aa.stream().flatMap(Collection::stream)
+                .collect(Collectors.toList());
 
-        System.out.println(string1);
+      //  System.out.println(string1);
 
         String string = Optional.ofNullable(map)
                 .map(x -> map.get("1"))
