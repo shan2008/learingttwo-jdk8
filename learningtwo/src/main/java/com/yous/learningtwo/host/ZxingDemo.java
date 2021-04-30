@@ -33,6 +33,9 @@ public class ZxingDemo {
     @Test
     public  void main1() throws Exception {
 
+
+        Long.valueOf(null);
+
         String file = "D:\\Users\\syou\\Desktop\\22.png";
 
         System.out.println(loadPic(file));
