@@ -1,5 +1,6 @@
 package com.yous.learningtwo.host.observer;
 
+
 import org.junit.Test;
 
 import java.util.Observable;
