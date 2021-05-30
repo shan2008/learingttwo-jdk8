@@ -10,8 +10,10 @@ public class SotrTwoArray {
 
     @Test
     public void test() {
-        int[][] a = {{1, 3}, {4, 7}, {3, 5}};
-        sort(a);
+        int[][] a = {{1, 3}, {4, 7}, {2, 9}};
+       // sort(a);
+
+        eraseOverlapIntervals(a);
 
         System.out.println(a);
     }
@@ -39,8 +41,6 @@ public class SotrTwoArray {
                 x_end = t[1];
             }
         }
-
-
         return intervals.length-count;
     }
 

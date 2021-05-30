@@ -3,6 +3,11 @@ package com.yous.learningtwo.host.algorithm;
 public class CheckPerfectNumber {
 
 
+    /**
+     *
+     * @param num
+     * @return
+     */
     public boolean checkPerfectNumber(int num) {
         if (num == 0) {
             return false;
